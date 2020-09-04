@@ -1,4 +1,5 @@
 <Gouki>
+	
 <append xpath="/progression/skills">
 	<!-- This adds a new perk book to collect for diamond tools. -->
 	<skill name="skillDiamond" parent="attBooks" name_key="perkDiamondName" desc_key="perkDiamondDesc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_diamond"><effect_group/></skill>
@@ -56,11 +57,7 @@
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeToolChainsawCB"/>
 		</effect_group>
 	</perk>
-	
-	
+		
 </append>
-
-
-
 
 </Gouki>
