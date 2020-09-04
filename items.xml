@@ -4,7 +4,7 @@
 <!-- Diamond Books -->
 	<item name="bookDiamondHarvest"> 
 		<property name="Extends" value="bookFiremansAlmanacHeat"/>
-		<property name="CustomIcon" value="CarbinoBookIcon"/>
+		<property name="CustomIcon" value="DiamondBookIcon"/>
 		
 		<property name="DescriptionKey" value="perkDiamondHarvestLongDesc"/>
 		<property name="Unlocks" value="perkDiamondHarvest"/>
@@ -19,7 +19,7 @@
 	</item>
 	<item name="bookDiamondUnlock"> 
 		<property name="Extends" value="bookFiremansAlmanacHeat"/>
-		<property name="CustomIcon" value="CarbinoBookIcon"/>
+		<property name="CustomIcon" value="DiamondBookIcon"/>
 		
 		<property name="DescriptionKey" value="perkDiamondUnlockLongDesc"/>
 		<property name="Unlocks" value="perkDiamondUnlock"/>
@@ -34,7 +34,7 @@
 	</item>
 	<item name="bookDiamondMaintenance"> 
 		<property name="Extends" value="bookFiremansAlmanacHeat"/>
-		<property name="CustomIcon" value="CarbinoBookIcon"/>
+		<property name="CustomIcon" value="DiamondBookIcon"/>
 		
 		<property name="DescriptionKey" value="perkDiamondMaintenanceLongDesc"/>
 		<property name="Unlocks" value="perkDiamondMaintenance"/>
@@ -49,7 +49,7 @@
 	</item>
 	<item name="bookDiamondBDamage"> 
 		<property name="Extends" value="bookFiremansAlmanacHeat"/>
-		<property name="CustomIcon" value="CarbinoBookIcon"/>
+		<property name="CustomIcon" value="DiamondBookIcon"/>
 		
 		<property name="DescriptionKey" value="perkDiamondBDamageLongDesc"/>
 		<property name="Unlocks" value="perkDiamondBDamage"/>
@@ -64,7 +64,7 @@
 	</item>
 	<item name="bookDiamondEarthquake"> 
 		<property name="Extends" value="bookFiremansAlmanacHeat"/>
-		<property name="CustomIcon" value="CarbinoBookIcon"/>
+		<property name="CustomIcon" value="DiamondBookIcon"/>
 		
 		<property name="DescriptionKey" value="perkDiamondEarthquakeLongDesc"/>
 		<property name="Unlocks" value="perkDiamondEarthquake"/>
@@ -79,7 +79,7 @@
 	</item>
 	<item name="bookDiamondCombo"> 
 		<property name="Extends" value="bookFiremansAlmanacHeat"/>
-		<property name="CustomIcon" value="CarbinoBookIcon"/>
+		<property name="CustomIcon" value="DiamondBookIcon"/>
 		
 		<property name="DescriptionKey" value="perkDiamondComboLongDesc"/>
 		<property name="Unlocks" value="perkDiamondCombo"/>
@@ -94,7 +94,7 @@
 	</item>
 	<item name="bookDiamondResistance"> 
 		<property name="Extends" value="bookFiremansAlmanacHeat"/>
-		<property name="CustomIcon" value="CarbinoBookIcon"/>
+		<property name="CustomIcon" value="DiamondBookIcon"/>
 		
 		<property name="DescriptionKey" value="perkDiamondResistanceLongDesc"/>
 		<property name="Unlocks" value="perkDiamondResistance"/>
