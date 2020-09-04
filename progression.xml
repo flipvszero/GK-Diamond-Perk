@@ -1,0 +1,66 @@
+<Gouki>
+<append xpath="/progression/skills">
+	<!-- This adds a new perk book to collect for carbino tools. -->
+	<skill name="skillCarbino" parent="attBooks" name_key="perkCarbinoName" desc_key="perkCarbinoDesc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_diamond"><effect_group/></skill>
+</append>
+
+<append xpath="/progression/perks">
+<!-- Carbino Books -->
+	<perk name="perkCarbinoHarvest" parent="skillCarbino" max_level="1" base_skill_point_cost="0" name_key="perkCarbinoHarvest" desc_key="perkCarbinoHarvestDesc" long_desc_key="perkCarbinoHarvestLongDesc">
+		<effect_group>
+			<passive_effect name="HarvestCount" operation="base_set" level="1" value="2" tags="oreWoodHarvest"/>
+		    <passive_effect name="PlayerExpGain" operation="perc_add" level="1" value="-.09" tags="Harvesting"/>
+		</effect_group>
+	</perk>
+	<perk name="perkCarbinoUnlock" parent="skillCarbino" max_level="1" base_skill_point_cost="0" name_key="perkCarbinoUnlock" desc_key="perkCarbinoUnlockDesc" long_desc_key="perkCarbinoUnlockLongDesc">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeToolAugerCB"/>
+		</effect_group>
+	</perk>
+	<perk name="perkCarbinoMaintenance" parent="skillCarbino" max_level="1" base_skill_point_cost="0" name_key="perkCarbinoMaintenance" desc_key="perkCarbinoMaintenanceDesc" long_desc_key="perkCarbinoMaintenanceLongDesc">
+		<effect_group>
+			<passive_effect name="DegradationPerUse" operation="perc_add" level="1" value="-.3" tags="oreWoodHarvest,meleeToolAugerCB,meleeToolChainsawCB"/>
+		</effect_group>
+	</perk>
+	<perk name="perkCarbinoBDamage" parent="skillCarbino" max_level="1" base_skill_point_cost="0" name_key="perkCarbinoBDamage" desc_key="perkCarbinoBDamageDesc" long_desc_key="perkCarbinoBDamageLongDesc">
+		<effect_group>
+			<passive_effect name="BlockDamage" operation="base_add" level="1" value="200" tags="ore,meleeToolAugerCB,meleeToolChainsawCB"/>
+		</effect_group>
+	</perk>
+	<perk name="perkCarbinoEarthquake" parent="skillCarbino" max_level="1" base_skill_point_cost="0" name_key="perkCarbinoEarthquake" desc_key="perkCarbinoEarthquakeDesc" long_desc_key="perkCarbinoEarthquakeLongDesc">
+		<effect_group>
+			<passive_effect name="FallingBlockDamage" operation="perc_add" level="1" value="-.8"/>
+		</effect_group>
+	</perk>
+	<perk name="perkCarbinoCombo" parent="skillCarbino" max_level="1" base_skill_point_cost="0" name_key="perkCarbinoCombo" desc_key="perkCarbinoComboDesc" long_desc_key="perkCarbinoComboLongDesc">
+		<effect_group>
+		    <passive_effect name="Mobility" operation="perc_add" value=".04"/>
+			<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.1"/>
+			<passive_effect name="WalkSpeed" operation="base_set" value="5.0"/>
+		    <passive_effect name="RunSpeed" operation="base_set" value="3.0"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="3"/>
+		</effect_group>
+	</perk>
+	<perk name="perkCarbinoResistance" parent="skillCarbino" max_level="1" base_skill_point_cost="0" name_key="perkCarbinoResistance" desc_key="perkCarbinoResistanceDesc" long_desc_key="perkCarbinoResistanceLongDesc">
+		<effect_group>
+		    <passive_effect name="HypothermalResist" operation="base_add" value="6"/>
+			<passive_effect name="HyperthermalResist" operation="base_add" value="6"/>
+			<passive_effect name="ElementalDamageResist" operation="base_add" value="2" tags="heat,electrical"/>
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffDysenteryCatchDrink"/>
+		</effect_group>
+	</perk>
+	
+	
+	<perk name="perkCarbinoComplete" parent="skillCarbino" max_level="1" base_skill_point_cost="0" name_key="perkCarbinoComplete" desc_key="perkCarbinoCompleteDesc" long_desc_key="perkCarbinoCompleteLongDesc">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeToolChainsawCB"/>
+		</effect_group>
+	</perk>
+	
+	
+</append>
+
+
+
+
+</Gouki>

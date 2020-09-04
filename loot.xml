@@ -1,0 +1,11 @@
+<Gouki>
+
+<append xpath="/lootcontainers/lootgroup[@name='perkBooks']">
+	<item name="bookCarbinoHarvest"/>
+	<item name="bookCarbinoUnlock"/>
+	<item name="bookCarbinoMaintenance"/>
+	<item name="bookCarbinoBDamage"/>
+	<item name="bookCarbinoEarthquake"/>
+</append>
+
+</Gouki>
