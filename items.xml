@@ -1,0 +1,113 @@
+<Gouki>
+
+<append xpath="/items">
+<!-- Carbino Books -->
+	<item name="bookCarbinoHarvest"> 
+		<property name="Extends" value="bookFiremansAlmanacHeat"/>
+		<property name="CustomIcon" value="CarbinoBookIcon"/>
+		
+		<property name="DescriptionKey" value="perkCarbinoHarvestLongDesc"/>
+		<property name="Unlocks" value="perkCarbinoHarvest"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkCarbinoHarvest" level="-1"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkCarbinoComplete" level="-1">
+				<requirement name="PerksUnlocked" skill_name="skillCarbino" operation="GTE" value="7"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+				<requirement name="PerksUnlocked" skill_name="skillCarbino" operation="GTE" value="7"/></triggered_effect>
+		</effect_group>
+	</item>
+	<item name="bookCarbinoUnlock"> 
+		<property name="Extends" value="bookFiremansAlmanacHeat"/>
+		<property name="CustomIcon" value="CarbinoBookIcon"/>
+		
+		<property name="DescriptionKey" value="perkCarbinoUnlockLongDesc"/>
+		<property name="Unlocks" value="perkCarbinoUnlock"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkCarbinoUnlock" level="-1"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkCarbinoComplete" level="-1">
+				<requirement name="PerksUnlocked" skill_name="skillCarbino" operation="GTE" value="7"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+				<requirement name="PerksUnlocked" skill_name="skillCarbino" operation="GTE" value="7"/></triggered_effect>
+		</effect_group>
+	</item>
+	<item name="bookCarbinoMaintenance"> 
+		<property name="Extends" value="bookFiremansAlmanacHeat"/>
+		<property name="CustomIcon" value="CarbinoBookIcon"/>
+		
+		<property name="DescriptionKey" value="perkCarbinoMaintenanceLongDesc"/>
+		<property name="Unlocks" value="perkCarbinoMaintenance"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkCarbinoMaintenance" level="-1"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkCarbinoComplete" level="-1">
+				<requirement name="PerksUnlocked" skill_name="skillCarbino" operation="GTE" value="7"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+				<requirement name="PerksUnlocked" skill_name="skillCarbino" operation="GTE" value="7"/></triggered_effect>
+		</effect_group>
+	</item>
+	<item name="bookCarbinoBDamage"> 
+		<property name="Extends" value="bookFiremansAlmanacHeat"/>
+		<property name="CustomIcon" value="CarbinoBookIcon"/>
+		
+		<property name="DescriptionKey" value="perkCarbinoBDamageLongDesc"/>
+		<property name="Unlocks" value="perkCarbinoBDamage"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkCarbinoBDamage" level="-1"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkCarbinoComplete" level="-1">
+				<requirement name="PerksUnlocked" skill_name="skillCarbino" operation="GTE" value="7"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+				<requirement name="PerksUnlocked" skill_name="skillCarbino" operation="GTE" value="7"/></triggered_effect>
+		</effect_group>
+	</item>
+	<item name="bookCarbinoEarthquake"> 
+		<property name="Extends" value="bookFiremansAlmanacHeat"/>
+		<property name="CustomIcon" value="CarbinoBookIcon"/>
+		
+		<property name="DescriptionKey" value="perkCarbinoEarthquakeLongDesc"/>
+		<property name="Unlocks" value="perkCarbinoEarthquake"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkCarbinoEarthquake" level="-1"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkCarbinoComplete" level="-1">
+				<requirement name="PerksUnlocked" skill_name="skillCarbino" operation="GTE" value="7"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+				<requirement name="PerksUnlocked" skill_name="skillCarbino" operation="GTE" value="7"/></triggered_effect>
+		</effect_group>
+	</item>
+	<item name="bookCarbinoCombo"> 
+		<property name="Extends" value="bookFiremansAlmanacHeat"/>
+		<property name="CustomIcon" value="CarbinoBookIcon"/>
+		
+		<property name="DescriptionKey" value="perkCarbinoComboLongDesc"/>
+		<property name="Unlocks" value="perkCarbinoCombo"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkCarbinoCombo" level="-1"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkCarbinoComplete" level="-1">
+				<requirement name="PerksUnlocked" skill_name="skillCarbino" operation="GTE" value="7"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+				<requirement name="PerksUnlocked" skill_name="skillCarbino" operation="GTE" value="7"/></triggered_effect>
+		</effect_group>
+	</item>
+	<item name="bookCarbinoResistance"> 
+		<property name="Extends" value="bookFiremansAlmanacHeat"/>
+		<property name="CustomIcon" value="CarbinoBookIcon"/>
+		
+		<property name="DescriptionKey" value="perkCarbinoResistanceLongDesc"/>
+		<property name="Unlocks" value="perkCarbinoResistance"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkCarbinoResistance" level="-1"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkCarbinoComplete" level="-1">
+				<requirement name="PerksUnlocked" skill_name="skillCarbino" operation="GTE" value="7"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+				<requirement name="PerksUnlocked" skill_name="skillCarbino" operation="GTE" value="7"/></triggered_effect>
+		</effect_group>
+	</item>
+
+</append>
+
+</Gouki>
