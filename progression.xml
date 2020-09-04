@@ -34,7 +34,7 @@
 	</perk>
 	<perk name="perkDiamondCombo" parent="skillDiamond" max_level="1" base_skill_point_cost="0" name_key="perkDiamondCombo" desc_key="perkDiamondComboDesc" long_desc_key="perkDiamondComboLongDesc">
 		<effect_group>
-		    <passive_effect name="Mobility" operation="perc_add" value=".04"/>
+		        <passive_effect name="Mobility" operation="perc_add" value=".04"/>
 			<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.1"/>
 			<passive_effect name="WalkSpeed" operation="base_set" value="5.0"/>
 		        <passive_effect name="RunSpeed" operation="base_set" value="3.0"/>
