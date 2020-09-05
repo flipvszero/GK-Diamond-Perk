@@ -9,23 +9,23 @@
 <!-- Diamond Books -->
 	<perk name="perkDiamondHarvest" parent="skillDiamond" max_level="1" base_skill_point_cost="0" name_key="perkDiamondHarvest" desc_key="perkDiamondHarvestDesc" long_desc_key="perkDiamondHarvestLongDesc">
 		<effect_group>
-		    <passive_effect name="HarvestCount" operation="base_set" level="1" value="2" tags="oreWoodHarvest"/>
+		    <passive_effect name="HarvestCount" operation="base_set" level="1" value="2" tags="oreWoodHarvest,salvageHarvest,butcherHarvest,diamondaxe,diamondPickaxe,diamondShovel,diamondKnife,diamondMachete,diamondWrench,diamondChainSaw,diamondAuger"/>
 		    <passive_effect name="PlayerExpGain" operation="perc_add" level="1" value="-.09" tags="Harvesting"/>
 		</effect_group>
 	</perk>
 	<perk name="perkDiamondUnlock" parent="skillDiamond" max_level="1" base_skill_point_cost="0" name_key="perkDiamondUnlock" desc_key="perkDiamondUnlockDesc" long_desc_key="perkDiamondUnlockLongDesc">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeToolAugerCB"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="diamondaxe,diamondPickaxe,diamondShovel,diamondKnife,diamondSledgehammer,diamondMachete,diamondCrossbow,diamondWrench,diamondChainSaw,diamondAuger,ammoCrossbowBoltDiamond"/>
 		</effect_group>
 	</perk>
 	<perk name="perkDiamondMaintenance" parent="skillDiamond" max_level="1" base_skill_point_cost="0" name_key="perkDiamondMaintenance" desc_key="perkDiamondMaintenanceDesc" long_desc_key="perkDiamondMaintenanceLongDesc">
 		<effect_group>
-			<passive_effect name="DegradationPerUse" operation="perc_add" level="1" value="-.3" tags="oreWoodHarvest,meleeToolAugerCB,meleeToolChainsawCB"/>
+			<passive_effect name="DegradationPerUse" operation="perc_add" level="1" value="-.3" tags="oreWoodHarvest,salvageHarvest,butcherHarvest,diamondaxe,diamondPickaxe,diamondShovel,diamondKnife,diamondMachete,diamondWrench,diamondChainSaw,diamondAuger"/>
 		</effect_group>
 	</perk>
 	<perk name="perkDiamondBDamage" parent="skillDiamond" max_level="1" base_skill_point_cost="0" name_key="perkDiamondBDamage" desc_key="perkDiamondBDamageDesc" long_desc_key="perkDiamondBDamageLongDesc">
 		<effect_group>
-			<passive_effect name="BlockDamage" operation="base_add" level="1" value="200" tags="ore,meleeToolAugerCB,meleeToolChainsawCB"/>
+			<passive_effect name="BlockDamage" operation="base_add" level="1" value="200" tags="oreWoodHarvest,salvageHarvest,butcherHarvest,diamondaxe,diamondPickaxe,diamondShovel,diamondKnife,diamondMachete,diamondWrench,diamondChainSaw,diamondAuger"/>
 		</effect_group>
 	</perk>
 	<perk name="perkDiamondEarthquake" parent="skillDiamond" max_level="1" base_skill_point_cost="0" name_key="perkDiamondEarthquake" desc_key="perkDiamondEarthquakeDesc" long_desc_key="perkDiamondEarthquakeLongDesc">
@@ -35,17 +35,16 @@
 	</perk>
 	<perk name="perkDiamondCombo" parent="skillDiamond" max_level="1" base_skill_point_cost="0" name_key="perkDiamondCombo" desc_key="perkDiamondComboDesc" long_desc_key="perkDiamondComboLongDesc">
 		<effect_group>
-		        <passive_effect name="Mobility" operation="perc_add" value=".04"/>
-			<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.1"/>
-			<passive_effect name="WalkSpeed" operation="base_set" value="5.0"/>
-		        <passive_effect name="RunSpeed" operation="base_set" value="3.0"/>
-			<passive_effect name="PhysicalDamageResist" operation="base_add" value="3"/>
+		        <passive_effect name="Mobility" operation="perc_add" value=".04" tags="diamondHelmet,diamondChestArmor,diamondGloves,diamondLegArmor,diamondBoots"/>
+			<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.1" tags="diamondHelmet,diamondChestArmor,diamondGloves,diamondLegArmor,diamondBoots"/>
+			<passive_effect name="StaminaLoss" operation="perc_add" value="-.2" tags="diamondaxe,diamondPickaxe,diamondShovel,diamondKnife,diamondMachete,diamondWrench,diamondChainSaw,diamondAuger"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="3" tags="diamondChestArmor"/>
 		</effect_group>
 	</perk>
 	<perk name="perkDiamondResistance" parent="skillDiamond" max_level="1" base_skill_point_cost="0" name_key="perkDiamondResistance" desc_key="perkDiamondResistanceDesc" long_desc_key="perkCarbinoResistanceLongDesc">
 		<effect_group>
-		        <passive_effect name="HypothermalResist" operation="base_add" value="6"/>
-			<passive_effect name="HyperthermalResist" operation="base_add" value="6"/>
+		        <passive_effect name="HypothermalResist" operation="base_add" value="6" tags="diamondChestArmor"/>
+			<passive_effect name="HyperthermalResist" operation="base_add" value="6" tags="diamondChestArmor"/>
 			<passive_effect name="ElementalDamageResist" operation="base_add" value="2" tags="heat,electrical"/>
 			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buffDysenteryCatchDrink"/>
 		</effect_group>
@@ -54,7 +53,7 @@
 	
 	<perk name="perkDiamondComplete" parent="skillDiamond" max_level="1" base_skill_point_cost="0" name_key="perkDiamondComplete" desc_key="perkDiamondCompleteDesc" long_desc_key="perkDiamondCompleteLongDesc">
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeToolChainsawCB"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="diamondHelmet,diamondChestArmor,diamondGloves,diamondLegArmor,diamondBoots"/>
 		</effect_group>
 	</perk>
 		
